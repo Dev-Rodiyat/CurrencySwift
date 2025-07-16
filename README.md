@@ -12,6 +12,8 @@ A sleek and responsive web-based currency converter built with **React**, **Tail
 * 🧮 **Precision Calculations** — Amount is multiplied by live exchange rate with up to 2 decimal precision.
 * 💡 **Elegant UI** — Styled with Tailwind CSS, animated with Framer Motion.
 * 📱 **Responsive Design** — Fully optimized for mobile, tablet, and desktop views.
+* 🔁 **Add "Swap" Button** — Quickly switch between the from and to currencies.
+* ⌨️ **Keyboard Navigation** — Navigate dropdown items using arrow keys and select with Enter.
 
 ---
 

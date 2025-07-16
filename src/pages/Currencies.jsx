@@ -80,12 +80,12 @@ export default function Currencies() {
     };
 
     const getSymbol = (code) => {
-  const match = currencyOptions.find((c) => c.code === code);
-  if (!match) {
-    console.warn(`No match found for ${code}`, currencyOptions);
-  }
-  return match?.currencySymbol || code;
-};
+        const match = currencyOptions.find((c) => c.code === code);
+        if (!match) {
+            console.warn(`No match found for ${code}`, currencyOptions);
+        }
+        return match?.currencySymbol || code;
+    };
 
     return (
         <section className="min-h-screen bg-white text-slate-800">
@@ -109,6 +109,16 @@ export default function Currencies() {
                             onChange={setFromCurrency}
                             options={currencyOptions}
                         />
+                        <button
+                            onClick={() => {
+                                setFromCurrency(toCurrency);
+                                setToCurrency(fromCurrency);
+                            }}
+                            // className="self-center px-4 py-2 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition"
+                        >
+                            🔄
+                        </button>
+
                         <CurrencySelector
                             label="To"
                             selected={toCurrency}
