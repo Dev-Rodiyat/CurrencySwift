@@ -51,8 +51,8 @@ export default function About() {
                     viewport={{ once: true }}
                     className="text-center"
                 >
-                    <h1 className="text-4xl font-bold text-emerald-600 mb-2">About CurrencySwift</h1>
-                    <p className="text-slate-600 max-w-xl mx-auto text-lg">
+                    <h1 className="sm:text-4xl text-3xl font-bold text-emerald-600 mb-2">About CurrencySwift</h1>
+                    <p className="text-slate-600 max-w-xl mx-auto sm:text-lg text-base">
                         Seamless, real-time currency conversion with a clean and modern UI.
                     </p>
                     {rate && (
@@ -107,7 +107,7 @@ export default function About() {
                     className="space-y-3"
                 >
                     <h2 className="text-2xl font-semibold text-emerald-600">Features</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-12">
                         {features.map((feature, i) => (
                             <motion.div
                                 key={i}
